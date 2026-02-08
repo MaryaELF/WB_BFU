@@ -20,11 +20,11 @@
    git clone <ссылка на репозиторий>
    cd nginx-lab
 2. Запустить контейнеры:
-```bash
-docker-compose up -d --build
-```
+   ```bash
+   docker-compose up -d --build
+   ```
 3. Открыть в браузере:
-```http://localhost:8888```
+   ```http://localhost:8888```
 📂 Содержимое проекта
 
 ```docker-compose.yml``` — описание сервиса Nginx
@@ -55,11 +55,11 @@ docker-compose up -d --build
    git clone <ссылка на репозиторий>
    cd nginx-lab
 2. Запустить контейнеры:
-```bash
-docker-compose up -d --build
-```
+   ```bash
+   docker-compose up -d --build
+   ```
 3. Открыть в браузере:
-```http://localhost:8080/index.html```
+   ```http://localhost:8080/index.html```
 📂 Содержимое проекта
 
 ```docker-compose.yml``` — описание сервиса Nginx
