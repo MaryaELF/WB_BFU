@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Hattenschweiler", sans-serif;
+    background-image: linear-gradient(to top, rgb(18, 93, 18), rgb(56, 166, 56), rgb(112, 227, 112));
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    font-family: "Hattenschweiler";
+    color:rgb(0, 21, 2);
+    font-size: 5rem; 
+    font-weight: 700; 
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+form{
+    background-image: linear-gradient(to top, rgb(18, 93, 18), rgb(56, 166, 56), rgb(112, 227, 112));
+    font-family: "Hattenschweiler";
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px; 
+    gap: 10px; 
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    color: #333;
+    gap: 20px;
+}
+
+.row-container {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+.conter1 {
+    padding: 20px 0; 
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.conter1 input {
+    font-family: "Hattenschweiler";
+    border-radius: 15px;
+    padding: 15px; 
+    border: none;
+    text-align: center;
+    width: 100%; 
+    max-width: 660px; 
+    margin-bottom: 10px; 
+    margin-top: 2px; 
+    font-size: 1.2rem;
+    background-color: rgb(223, 255, 231);
+}
+
+.conter2 {
+    float: left;
+    width: 48%;
+    margin-left: 2%;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    color:rgb(0, 21, 2);
+}
+
+.conter3{
+    float: right;
+    width: 48%;
+    margin-right: 2%;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    color:rgb(0, 21, 2);
+}
+
+a {
+    font-family: "Hattenschweiler";
+    color:rgb(0, 21, 2);
+    font-size: 2.2rem; 
+    font-weight: 700; 
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+input[type="checkbox"], 
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #02330e;
+    background-color: rgb(223, 255, 231);
+    border-radius: 6px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+input[type="radio"] {
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #02330e;
+    border-color: #02330e;
+}
+
+input[type="radio"]:checked {
+    background-color: #02330e;
+    border-color: #02330e;
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+    background-color: rgb(192, 250, 206);
+    border-color: rgb(38, 237, 85);
+}
+
+input[type="checkbox"]:checked:hover,
+input[type="radio"]:checked:hover {
+    background-color: rgb(38, 237, 85);
+    border-color: rgb(38, 237, 85);
+}
+
+.conter4 {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    width: 90%;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 0px;
+    padding-top: 35px;
+}
+
+select {
+    font-family: "Hattenschweiler";
+    background-color: #b5ffc647;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem; 
+}
+
+
+
+button {
+    font-family: "Hattenschweiler", sans-serif;
+    border-radius: 10px;
+    border: none;
+    background-color: #02330e;
+    color: rgb(200, 233, 203);
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: rgb(38, 237, 85);
+}
+
+select:hover {
+    background-color: rgb(38, 237, 85);
+}
+
+.conter1 input:hover {
+    background-color: rgb(192, 250, 206);
+}
+
+.conter2:hover {
+    background-color: rgba(175, 235, 190, 0.07);
+}
+
+.conter3:hover {
+    background-color: rgba(175, 235, 190, 0.07);
+}
