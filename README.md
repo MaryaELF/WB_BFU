@@ -99,7 +99,7 @@ HTML-страница успешно запущена.
    docker-compose up -d --build
    ```
 3. Открыть в браузере:
-   ```http://localhost:8080/index.html```
+   ```http://localhost:8080```
 
 ---
    
