@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Хакатон</title>
+</head>
+<body>
+
+    <h1>Регистрация на Хакатон</h1>
+
+    <form id="myForm" method="POST" action="process.php">
+        <div class="conter1">
+            <input type="text" name="username" placeholder="Введите имя"><br><br>
+            <input type="text" name="age" placeholder="Введите возраст"><br><br>
+            <input type="text" name="direction" placeholder="Введите направление"><br><br>
+        </div>
+        <div class="row-container">
+            <div class="conter2">
+                <a>Опыт участия</a><br>
+                <input type="checkbox" name="subscribe"> Акселиратор<br>
+                <input type="checkbox" name="subscribe"> Ещё какая-то программа<br>
+                <input type="checkbox" name="subscribe"> И ещё какая-то программа<br>
+                <input type="checkbox" name="subscribe"> Кто я?<br>
+                <input type="checkbox" name="subscribe"> Ещё нет<br><br>
+            </div>
+            <div class="conter3">
+                <a>Пол</a><br>
+                <input type="radio" name="gender" value="m"> Муж<br>
+                <input type="radio" name="gender" value="f"> Жен<br>
+                <input type="radio" name="gender" value="f"> Паркет<br>
+                <input type="radio" name="gender" value="f"> Плитка<br>
+                <input type="radio" name="gender" value="f"> Ламинат<br><br>
+            </div>
+        </div>
+        <div class="conter4">
+            <select name="role_team">
+                <option value="unknown">Не выбранно</option>
+                <option value="Frontend">Фронтенд-разработчик</option>
+                <option value="Mobile">Мобильный разработчик</option>
+                <option value="Designer">Дизайнер</option>
+                <option value="Backend">Бэкенд-разработчик</option>
+                <option value="Data">Дата-саентист</option>
+                <option value="Business">Бизнес-аналитик</option>
+                <option value="Tester">Тестировщик</option>
+                <option value="all">Все варианты</option>
+            </select><br><br>
+        </div>
+
+        <button type="submit">Отправить</button>
+    </form>
+    
+    <hr>
+    <script src="script.js"></script>
+<!-- Регистрация на хакатон (имя, возраст, направление, чекбокс «Опыт участия», радио «Роль в команде»). -->
+</body>
+</html>

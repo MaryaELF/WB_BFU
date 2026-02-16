@@ -1,0 +1,18 @@
+services:
+  web:
+    image: nginx:1.27-alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./www:/var/www/html
+      - ./nginx:/etc/nginx/conf.d
+    depends_on:
+      - php 
+      
+  php:
+    image: php:8.2-fpm
+    container_name: Lab3
+    volumes:
+      - ./www:/var/www/html
+    expose:
+      - "9000"
