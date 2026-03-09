@@ -1,0 +1,14 @@
+{
+    "name": "maria/lab4",
+    "autoload": {
+        "psr-4": {
+            "Maria\\Lab4\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "maria"
+        }
+    ],
+    "require": {}
+}

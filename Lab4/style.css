@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Hattenschweiler", sans-serif;
+    background: linear-gradient(to top, rgb(18, 93, 18), rgb(56, 166, 56), rgb(112, 227, 112));
+    color: #333;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(0, 21, 2);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: rgb(0, 21, 2);
+    margin: 20px 0 10px 0;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.conter1, .conter2, .conter3, .conter4 {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+form {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    font-family: "Hattenschweiler", sans-serif;
+    background-color: rgb(223, 255, 231);
+    border: 2px solid #02330e;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 10px 0;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+select:hover {
+    background-color: rgb(192, 250, 206);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #02330e;
+    background-color: rgb(223, 255, 231);
+    border-radius: 6px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+input[type="radio"] {
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+    background-color: #02330e;
+}
+
+/* Кнопки */
+button {
+    font-family: "Hattenschweiler", sans-serif;
+    background-color: #02330e;
+    color: rgb(200, 233, 203);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(38, 237, 85);
+}
+
+a {
+    color: rgb(0, 21, 2);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.repo, .item {
+    background: rgb(223, 255, 231);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 4px solid #02330e;
+}
+
+.error {
+    background: #ffeef0;
+    color: #cb2431;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #fb858c;
+    margin: 10px 0;
+}
+
+.meta {
+    color: #586069;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+pre {
+    background: rgb(223, 255, 231);
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 10px 0;
+}
