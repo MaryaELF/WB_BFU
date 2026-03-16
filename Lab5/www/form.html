@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Регистрация на хакатон</title>
+</head>
+<body>
+    <h1>Регистрация на хакатон</h1>
+    
+    <form action="process.php" method="POST">
+        <div class="form-group">
+            <label for="name">Имя </label>
+            <input type="text" id="name" name="name" required maxlength="100" placeholder="Введите ваше имя">
+        </div>
+
+        <div class="form-group">
+            <label for="age">Возраст </label>
+            <input type="number" id="age" name="age" required min="3" max="1000" placeholder="Ваш возраст">
+        </div>
+
+        <div class="form-group">
+            <label for="direction">Направление</label>
+            <select id="direction" name="direction" required>
+                <option value="">Выберите направление</option>
+                <option value="web">Web-разработка</option>
+                <option value="mobile">Мобильные приложения</option>
+                <option value="ai">Искусственный интеллект</option>
+                <option value="iot">IoT</option>
+                <option value="game">GameDev</option>
+                <option value="other">Другое</option>
+            </select>
+        </div>
+
+        <div class="form-group checkbox-group">
+            <label>
+                <input type="checkbox" name="has_experience" value="1">
+                Есть опыт участия
+            </label>
+        </div>
+
+        <div class="form-group radio-group">
+            <label>Роль в команде </label>
+            <label><input type="radio" name="team_role" value="team_lead" required> Тимлид</label>
+            <label><input type="radio" name="team_role" value="developer"> Разработчик</label>
+            <label><input type="radio" name="team_role" value="designer"> Дизайнер</label>
+            <label><input type="radio" name="team_role" value="analyst"> Аналитик</label>
+            <label><input type="radio" name="team_role" value="other"> Другое</label>
+        </div>
+
+        <button type="submit"> Зарегистрироваться</button>
+    </form>
+
+    <p><a href="index.php">Посмотреть всех участников</a></p>
+</body>
+</html>

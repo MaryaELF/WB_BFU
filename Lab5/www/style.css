@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hattenschweiler", sans-serif;
+  background-image: linear-gradient(to top, rgb(18, 93, 18), rgb(56, 166, 56), rgb(112, 227, 112));
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  font-family: "Hattenschweiler", sans-serif;
+  color: rgb(0, 21, 2);
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  gap: 20px;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 1.3rem;
+  color: rgb(0, 21, 2);
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  font-family: "Hattenschweiler", sans-serif;
+  border-radius: 10px;
+  padding: 12px 15px;
+  border: 2px solid rgb(18, 93, 18);
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: rgb(223, 255, 231);
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: rgb(38, 237, 85);
+  background-color: rgb(192, 250, 206);
+}
+
+.checkbox-group,
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  width: 100%;
+}
+
+.checkbox-group label,
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2rem;
+  color: rgb(0, 21, 2);
+  cursor: pointer;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid rgb(0, 51, 14);
+  background-color: rgb(223, 255, 231);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="radio"] {
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background-color: rgb(0, 51, 14);
+  border-color: rgb(0, 51, 14);
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+  background-color: rgb(192, 250, 206);
+  border-color: rgb(38, 237, 85);
+}
+
+button,
+.btn {
+  font-family: "Hattenschweiler", sans-serif;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(0, 51, 14);
+  color: rgb(200, 233, 203);
+  padding: 15px 40px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+button:hover,
+.btn:hover {
+  background-color: rgb(38, 237, 85);
+  color: rgb(0, 21, 2);
+}
+
+.btn-danger {
+  background-color: rgb(180, 50, 50);
+  color: white;
+  padding: 6px 12px;
+  font-size: 1rem;
+}
+
+.btn-danger:hover {
+  background-color: rgb(220, 80, 80);
+  color: white;
+}
+
+table {
+  width: 100%;
+  max-width: 1200px;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+table th,
+table td {
+  padding: 15px 12px;
+  text-align: center;
+  border-bottom: 1px solid rgb(18, 93, 18);
+}
+
+table th {
+  background-color: rgb(18, 93, 18);
+  color: rgb(223, 255, 231);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+table td {
+  font-size: 1.1rem;
+  color: rgb(0, 21, 2);
+}
+
+table tr:hover {
+  background-color: rgba(38, 237, 85, 0.2);
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+.badge {
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.badge-yes {
+  background-color: rgb(38, 237, 85);
+  color: rgb(0, 21, 2);
+}
+
+.badge-no {
+  background-color: rgb(200, 200, 200);
+  color: rgb(0, 21, 2);
+}
+
+.success {
+  background-color: rgb(38, 237, 85);
+  color: rgb(0, 21, 2);
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.empty {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgb(0, 21, 2);
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px auto;
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  font-family: "Hattenschweiler", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: rgb(38, 237, 85);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row-container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
