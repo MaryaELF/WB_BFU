@@ -1,0 +1,11 @@
+{
+    "name": "lab6/movies",
+    "autoload": {
+        "psr-4": {
+            "App\\": "./"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.10"
+    }
+}
