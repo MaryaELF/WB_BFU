@@ -1,0 +1,19 @@
+{
+    "name": "maria/lab8",
+    "autoload": {
+        "psr-4": {
+            "Maria\\Lab8\\": "www/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Maria"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.5"
+    }
+}
