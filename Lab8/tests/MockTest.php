@@ -1,6 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\Attributes\AllowMockObjectsWithoutExpectations;
 
 require_once __DIR__ . '/../www/HacakthonRegistration.php';
 
@@ -48,6 +49,7 @@ class MockTest extends TestCase
         $this->assertEquals(999, $result['id']);
     }
 
+    #[AllowMockObjectsWithoutExpectations]
     public function testRegistrationDatabaseError(): void
     {
         $data = [
