@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Хакатон</title>
+</head>
+<body>
+    <h1>Регистрация на хакатон</h1>
+    <form method="POST" action="register.php">
+        <p>Имя: <input type="text" name="name" required></p>
+        <p>Возраст: <input type="number" name="age" min="14" max="100" required></p>
+        <p>Направление:
+            <select name="direction">
+                <option value="backend">Backend</option>
+                <option value="frontend">Frontend</option>
+                <option value="mobile">Mobile</option>
+                <option value="ai">AI</option>
+            </select>
+        </p>
+        <p>Опыт участия: 
+            <input type="checkbox" name="hasExperience" value="1"> Есть опыт
+        </p>
+        <p>Роль в команде:
+            <input type="radio" name="role" value="developer"> Разработчик
+            <input type="radio" name="role" value="designer"> Дизайнер
+            <input type="radio" name="role" value="team_lead"> Тимлид
+        </p>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</body>
+</html>

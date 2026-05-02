@@ -1,0 +1,65 @@
+services:
+  php:
+    build: .
+    container_name: hackathon-php
+    volumes:
+      - ./code/:/var/www/html
+      - ./tests:/var/www/html/tests
+    environment:
+      - DB_HOST=mysql
+      - DB_NAME=hackathon_db
+      - DB_USER=root
+      - DB_PASSWORD=rootpass
+    networks:
+      - hackathon-net
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  nginx:
+    image: nginx:alpine
+    container_name: hackathon-nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./code:/var/www/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - hackathon-net
+    depends_on:
+      - php
+
+  mysql:
+    image: mysql:8.0
+    container_name: hackathon-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: hackathon_db
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - hackathon-net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-prootpass"]
+      timeout: 20s
+      retries: 10
+      interval: 10s
+
+  adminer:
+    image: adminer:latest
+    container_name: hackathon-adminer
+    ports:
+      - "8081:8080"
+    networks:
+      - hackathon-net
+    depends_on:
+      - mysql
+
+networks:
+  hackathon-net:
+    driver: bridge
+
+volumes:
+  mysql_data:
