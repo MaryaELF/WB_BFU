@@ -13,7 +13,7 @@ class ApiTest extends TestCase
     public function testSimpleMockRequest(): void
     {
         $mock = new MockHandler([
-            new Response(200, [], json_encode(['status' => 'ok']))
+            new Response(500, [], json_encode(['status' => 'error'])) //new Response(200, [], json_encode(['status' => 'ok']))
         ]);
         
         $handlerStack = HandlerStack::create($mock);
@@ -23,7 +23,7 @@ class ApiTest extends TestCase
         ]);
         
         $response = $client->get('/test');
-        //$this->assertEquals(200, $response->getStatusCode());
+        $this->assertEquals(200, $response->getStatusCode());
         
         $data = json_decode($response->getBody(), true);
         $this->assertEquals('ok', $data['status']);
